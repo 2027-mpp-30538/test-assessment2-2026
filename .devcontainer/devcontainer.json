@@ -1,0 +1,26 @@
+{
+  "name": "Python (minimal)",
+  "image": "python:3.11-slim",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "-github.copilot-chat",
+        "quarto.quarto",
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ], 
+      "settings": {
+        "workbench.colorCustomizations": {
+          "titleBar.activeBackground": "#FF3EA5",
+          "titleBar.activeForeground": "#000000",
+          "statusBar.background": "#FF3EA5",
+          "statusBar.foreground": "#000000",
+          "activityBar.background": "#FF3EA5",
+          "activityBar.foreground": "#000000",
+          "editorGroupHeader.tabsBackground": "#FFB3DA"
+        },
+        "window.title": "QUIZ SANDBOX — ${dirty}${activeEditorShort}"
+      }
+    },
+    "postCreateCommand": "python -m pip install --upgrade pip && pip install numpy pandas matplotlib altair vl-convert-python"
+}

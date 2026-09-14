@@ -1,0 +1,34 @@
+---
+title: "ps2_lab_assessment"
+format: html
+editor: visual
+---
+
+```{python}
+
+"""
+USE CODESPACES ONLY FOR SCRATCH WORK. ANY CODE YOU WANT TO SUBMIT WILL NEED TO BE REPEATED IN THE CANVAS QUIZ.
+"""
+
+# The following code sets up your codespace and loads in a CSV of the df_cleaned dataset generated from the code in the quiz.
+
+import pandas as pd
+import altair as alt
+import time
+import os
+
+alt.renderers.enable("png");
+try:
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+except NameError:
+    pass  # __file__ is not defined in notebooks or quarto
+
+alt.data_transformers.disable_max_rows()
+```
+
+```{python}
+
+# write your code here to generate graph from df_cleaned
+
+df_cleaned = pd.read_csv("data/df_cleaned.csv")
+```
