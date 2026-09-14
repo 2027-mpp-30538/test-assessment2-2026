@@ -8,7 +8,7 @@
         "quarto.quarto",
         "ms-python.python",
         "ms-toolsai.jupyter"
-      ], 
+      ],
       "settings": {
         "workbench.colorCustomizations": {
           "titleBar.activeBackground": "#FF3EA5",
@@ -21,6 +21,7 @@
         },
         "window.title": "QUIZ SANDBOX — ${dirty}${activeEditorShort}"
       }
-    },
-    "postCreateCommand": "python -m pip install --upgrade pip && pip install numpy pandas matplotlib altair vl-convert-python"
+    }
+  },
+  "postCreateCommand": "python -m pip install --upgrade pip && pip install numpy pandas matplotlib altair vl-convert-python"
 }
